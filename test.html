@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste da Biblioteca Three.js</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        #scene-container { width: 100vw; height: 100vh; display: block; }
+    </style>
+</head>
+<body>
+    <div id="scene-container"></div>
+    <!-- importanto a animação que quer testar -->
+    <script type="module">
+        import { createAnimation } from './index.js';
+
+        const container = document.getElementById('scene-container');
+        createAnimation('sphere', container, {particleCount: 3200});
+    </script>
+</body>
+</html>
