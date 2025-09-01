@@ -13,10 +13,10 @@
     <div id="scene-container"></div>
     <!-- importanto a animação que quer testar -->
     <script type="module">
-        import { createAnimation } from './index.js';
+        import { createAnimation } from './main.js';
 
         const container = document.getElementById('scene-container');
-        createAnimation('sphere', container, {particleCount: 3200});
+        createAnimation("noise", container, { intensity: 0.05 });
     </script>
 </body>
 </html>

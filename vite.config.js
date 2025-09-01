@@ -1,6 +1,12 @@
-export default {
-    root: ".", // Define a raiz do projeto
-    server: {
-      open: "test.html", // Garante que ele carregue o HTML correto
-    },
-  };
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  root: "demo",
+  server: {
+    open: "/test.html"
+  },
+  build: {
+    outDir: "../dist",
+    emptyOutDir: true
+  }
+});

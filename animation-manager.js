@@ -2,12 +2,14 @@ import {cubeAnimation} from './animations/cube-animation.js';
 import { cityAnimation } from './animations/city-animation.js';
 import { blobSphereAnimation } from './animations/blob-sphere-animation.js';
 import { particlesSphereAnimation } from './animations/particles-sphere-animation.js';
+import { noiseAnimation } from './animations/noise-animation.js';
 
 const animations = {
     cube: cubeAnimation,
     city: cityAnimation,
     sphere: blobSphereAnimation,
-    particleSphere: particlesSphereAnimation
+    particleSphere: particlesSphereAnimation,
+    noise: noiseAnimation
 }
 
 /**
